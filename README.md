@@ -1,6 +1,6 @@
 # Capistrano::Hutch
 
-TODO: Write a gem description
+[Hutch](https://github.com/gocardless/hutch) integration for [Capistrano 3](https://github.com/capistrano/capistrano)
 
 ## Installation
 
