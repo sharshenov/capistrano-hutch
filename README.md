@@ -18,7 +18,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Add to your Capfile
+
+    require 'capistrano/hutch'
+
+Do not forget to create `config/hutch.yml` on production host and setup symlink.
 
 ## Contributing
 
