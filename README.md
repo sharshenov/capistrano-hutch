@@ -4,23 +4,33 @@
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Add this lines to your application's Gemfile:
 
-    gem 'capistrano-hutch'
+    gem 'hutch', github: 'gocardless/hutch' # currently capistrano-hutch requires HEAD version of hutch.
+    gem 'capistrano-hutch', group: :development
 
 And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install capistrano-hutch
-
 ## Usage
 
-Add to your Capfile
+ruby
+    # Capfile
 
     require 'capistrano/hutch'
+```
+
+Configurable options, shown here with defaults:
+
+```ruby
+    hutch_role:           :app
+    hutch_default_hooks:  true
+    hutch_pid:            File.join(shared_path, 'tmp', 'pids', 'hutch.pid')
+    hutch_config:         File.join(shared_path, 'config', 'hutch.yml')
+    hutch_env:            fetch(:rails_env, fetch(:rack_env, fetch(:stage)))
+    hutch_options:        nil
+```
 
 Do not forget to create `config/hutch.yml` on production host and setup symlink.
 
