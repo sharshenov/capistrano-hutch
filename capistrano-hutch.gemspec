@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Rustam Sharshenov"]
   spec.email         = ["rustam@sharshenov.com"]
   spec.summary       = %q{Hutch integration for Capistrano}
-  spec.description   = %q{Hutch integration for Capistrano}
+  spec.description   = %q{Hutch integration for Capistrano 3.1}
   spec.homepage      = "https://github.com/sharshenov/capistrano-hutch"
   spec.license       = "MIT"
 
@@ -18,6 +18,6 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "capistrano"
-  spec.add_development_dependency "hutch"
+  spec.add_runtime_dependency 'capistrano', "~> 3.1"
+  spec.add_runtime_dependency 'hutch', ">= 0.10.0.pre"
 end
