@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Capistrano::Hutch::VERSION
   spec.authors       = ["Rustam Sharshenov"]
   spec.email         = ["rustam@sharshenov.com"]
-  spec.summary       = %q{Hutch integration for Capistrano}
-  spec.description   = %q{Hutch integration for Capistrano 3.1}
+  spec.summary       = "Hutch integration for Capistrano"
+  spec.description   = "Hutch integration for Capistrano 3.1"
   spec.homepage      = "https://github.com/sharshenov/capistrano-hutch"
   spec.license       = "MIT"
 
