@@ -15,7 +15,7 @@ And then execute:
 
 ## Usage
 
-ruby
+```ruby
     # Capfile
 
     require 'capistrano/hutch'
