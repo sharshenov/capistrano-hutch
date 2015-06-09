@@ -2,6 +2,10 @@
 
 [Hutch](https://github.com/gocardless/hutch) integration for [Capistrano 3](https://github.com/capistrano/capistrano)
 
+# MAINTAINER NEEDED
+
+## I'm not supporting this project anymore. I suggest you to switch to foreman + capistrano-foreman. Self-daemonization is not a good thing actually. Better way is to use upstart/systemd to run your software. Foreman has export feature. You can export your Procfile and run hutch as system service.
+
 ## Installation
 
 Add this lines to your application's Gemfile:
